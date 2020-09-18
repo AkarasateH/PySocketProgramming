@@ -13,6 +13,7 @@ print('The server is ready to receive')
 
 def multiClient(connection):
   while 1:
+    try:
       sleepTime = random.randint(1, 4)
       print('Receiving data . . .')
       receivedMsg = connection.recv(1024)
@@ -23,6 +24,8 @@ def multiClient(connection):
       sleep(sleepTime)
 
       connection.send(receivedMsg)
+    except Exception as err:
+      pass
 
   connection.close()
   print('Client disconnected')
