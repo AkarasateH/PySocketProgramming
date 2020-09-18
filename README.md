@@ -27,6 +27,3 @@
 4. After run client, You will see ```ping ``` message in your terminal.
 5. Type your server IP address append ```ping ``` message and then enter.
 6. You can set ```timeout```, ```message``` and ```Number of retry loop``` in ```client.py``` by set at ```TIMEOUT```, ```MESSAGE``` and ```RETRY``` variables.
-
-## NOTE
-**TCP Might throw an error on the server but it's fine. You can connect to the server normally.**
